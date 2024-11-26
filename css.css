@@ -123,10 +123,13 @@ body {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
     margin: 100px auto;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
+    width: 100%;
+    
     
 }
 
