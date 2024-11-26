@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardim Florido | Página inicial</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <link rel="shortcut icon" type="image/x-icon" href="iconeFloricultura.ico">
+</head>
+<body>
+    <header>
+        <div class="tituloDoSite" align="center">
+            <a href="index.html"><img src="Logo.png" alt="Logo Jardim Florido" width="500px"></a>
+        </div>
+        
+       
+        <nav id="menuItem">
+            <button id="menuToggle">☰</button> 
+                <ul id="menuLista">
+                <li><a id="menuItem_itens" href="index.html">Página inicial</a></li>
+                <li><a id="menuItem_itens" href="pgcompras.html">Flores</a></li>
+                <li><a id="menuItem_itens" href="Utensilios.html">Utensílios</a></li>
+                <li><a id="menuItem_itens" href="carrinho.html">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="corpoDaPagina">
+        <section id="caixasInformativas">
+            <div class="box">
+                <h2>Sobre Nós</h2>
+                <p>A empresa Jardim Florido, é uma floricultura com compromisso é além das atividades comerciais convencionais de uma floricultura, planejando oferecer serviços de alta qualidade, como a venda cuidadosa de flores, buquês e arranjos, uma ampla variedade de plantas e vasos, produtos de jardinagem, serviços de decoração de 
+                    eventos, entrega segura de flores,
+                    futuramente criação de projetos de paisagismo transformadores. Nosso é na dedicação profunda a produtos relacionados a flores e plantas..</p>
+            </div>
+            <div class="box">
+                <h2>Missão</h2>
+                <p>Entrega simbólica de amor, carinho, emoção e respeito em um momento único e inesquecível para o cliente.</p>
+            </div>
+            <div class="box">
+                <h2>Canais</h2>
+                <p>Uma loja física em Vila Velha, com pedidos online e entrega na Grande Vitória.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        Jardim Florido© 2024
+    </footer>
+
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            const menuLista = document.getElementById('menuLista');
+            menuLista.style.display = menuLista.style.display === 'flex' ? 'none' : 'flex';
+        });
+    </script>
+    
+</body>
+</html>

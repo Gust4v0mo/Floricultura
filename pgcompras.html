@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jardim Florido | Flores</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/iconeFloricultura.ico">
+    <link rel="stylesheet" href="pgcompras.css">
+    <script>
+        function adicionarAoCarrinho(nome, preco, imagem) {
+            const item = { nome, preco, imagem };
+            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            carrinho.push(item);
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+            alert(nome + " foi adicionado ao carrinho");
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <a id= "imagem titulo"href="index.html"><img src="Logo.png" width="500px"></a></p>
+        <nav id ="menuItem">
+            <ul>
+                <li><a id="menuItem_itens" href="index.html">Início</a></li>
+                <li><a id="menuItem_itens" href="Utensilios.html">Utensílios</a></li>
+                <li><a id="menuItem_itens" href="carrinho.html">Carrinho</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Flores</h2>
+        <section class="produtos">
+            <div class="produto">
+                <img src="Rosa+Nina.jpg" alt="Rosa Vermelha">
+                <h3>Rosa Vermelha</h3>
+                <p>Preço: R$ 18,90 und</p>
+                <button onclick="adicionarAoCarrinho('Unidade de Rosa Vermelha', '18.90', 'Rosa+Nina.jpg')">Adicionar ao Carrinho</button>
+                
+            </div>
+            <div class="produto">
+                <img src="undOrquideas.jpg" alt=" Unidade orquidea">
+                <h3>Orquídea</h3>
+                <p>Preço: R$ 25,00 und </p>
+                <button onclick="adicionarAoCarrinho('Unidade de Orquídea', '25.00', 'undOrquideas.jpg')">Adicionar ao Carrinho</button>
+                
+            </div>
+            <div class="produto">
+                <img src="girassol.jpg" alt="Girassol">
+                <h3>Girassol</h3>
+                <p>Preço: R$ 9,00 und.</p>
+                <button onclick="adicionarAoCarrinho('Unidade de Girassol', '9.00', 'girassol.jpg')">Adicionar ao Carrinho</button>
+                
+            </div>
+            <div class="produto">
+                <img src="ArrFloresColombiana.jpg" alt="Arranjo de Flores Colombianas">
+                <h3>Arranjo de Flores Colombianas 10 und.</h3>
+                <p>Preço: R$ 290,00 und</p>
+                <button onclick="adicionarAoCarrinho('Unidade de Flores Colombianas', '290.00', 'ArrFloresColombiana.jpg')">Adicionar ao Carrinho</button>
+                
+            </div>
+            <div class="produto">
+                <img src="ArrFloresMargarida.jpg" alt="Arranjo de Margarida">
+                <h3>Arranjo de Margarida 10 und.</h3>
+                <p>Preço: R$ 180,00 und </p>
+                <button onclick="adicionarAoCarrinho('Arranjo de Margaridas', '180.00', 'ArrFloresMargarida.jpg')">Adicionar ao Carrinho</button>
+                
+            </div>
+            <div class="produto">
+                <img src="ArrFloresPrimavera.jpg" alt=" Arranjo Primavera">
+                <h3>Arranjo Primavera 10 und.</h3>
+                <p>Preço: R$ 200,00 und</p>
+                <button onclick="adicionarAoCarrinho('Arranjo Primavera', '200.00', 'ArrFloresPrimavera.jpg')">Adicionar ao Carrinho</button>
+                
+            </div>
+            <div class="produto">
+                <img src="croton-petra.jpg" alt=" Croton petra">
+                <h3>Croton Preta</h3>
+                <p>Preço: R$ 30,00 und</p>
+                <button onclick="adicionarAoCarrinho('Unidade de Corton Preta', '30.00', 'croton-petra.jpg')">Adicionar ao Carrinho</button>
+                
+            </div>
+            <div class="produto">
+                <img src="arranjo-de-rosas-vermelhas.jpg" alt=" Arranjo de Rosas Vermelhas">
+                <h3>Arranjo de Rosas Vermelhas</h3>
+                <p>Preço: R$ 209,00 und.</p>
+                <button onclick="adicionarAoCarrinho('Arranjo de Rosas Vermelhas', '209.00', 'arranjo-de-rosas-vermelhas.jpg')">Adicionar ao Carrinho</button>
+               
+            </div>
+            
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Jardim Florido &copy; 2024</p>
+    </footer>
+</body>
+</html>
