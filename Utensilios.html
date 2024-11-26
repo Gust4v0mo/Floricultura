@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura - Página de Compras</title>
+    <link rel="stylesheet" type="text/css" href="pgcompras.css">
+    <link rel="shortcut icon" type="image/x-icon" href="iconeFloricultura.ico">
+    <script>
+        function adicionarAoCarrinho(nome, preco, imagem) {
+            const item = { nome, preco, imagem };
+            let carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
+            carrinho.push(item);
+            localStorage.setItem('carrinho', JSON.stringify(carrinho));
+            alert(nome + " foi adicionado ao carrinho");
+        }
+    </script>
+
+</head>
+<body>
+    <header>
+        <a id= "imagem titulo"href="index.html"><img src="Logo.png" width="500px"></a></p>
+        <nav id ="menuItem">
+            <ul>
+                <li><a id="menuItem_itens" href="index.html">Início</a></li>
+                <li><a id="menuItem_itens" href="pgcompras.html">Flores</a></li>
+                <li><a id="menuItem_itens" href="carrinho.html">Carrinho</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Utensílios</h2>
+        <section class="produtos">
+            <div class="produto">
+                <img src="pazinhaComCaboDeMadeira.jpg" alt="Pazinha Tramontina">
+                <h3>Pazinha Jardim Aço Tramontina</h3>
+                <p>Preço: R$ 13,00 und.</p>
+                <button onclick="adicionarAoCarrinho('Pazinha Jardim Aço Tramontina', '13.90', 'pazinhaComCaboDeMadeira.jpg')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="Tesoura-para-Grama.jpg" alt=" Tesoura Para Grama TS 1107 Trapp">
+                <h3>Tesoura Para Grama TS 1107 Trapp</h3>
+                <p>Preço: R$ 80,00 und.</p>
+                <button onclick="adicionarAoCarrinho('Tesoura Para Grama TS 1107 Trapp', '80.00', 'Tesoura-para-Grama.jpg')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="tesouraParaPodaEletrica.jpg" alt="Tesoura Tramontina de Poda Eletrica">
+                <h3>Tesoura de Poda Bateria Toyama</h3>
+                <p>Preço: R$ 640,00 und.</p>
+                <button onclick="adicionarAoCarrinho('Tesoura de Poda Bateria Toyama', '640.00', 'tesouraParaPodaEletrica.jpg')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="Kit-com-3-Pecas-para-Jardim.jpg" alt="Conjunto para Jardim Tramontina">
+                <h3>Conjunto para Jardim Tramontina 3 Peças</h3>
+                <p>Preço: R$ 35,00</p>
+                <button onclick="adicionarAoCarrinho('Conjunto para Jardim Tramontina 3 Peças', '35.00', 'Kit-com-3-Pecas-para-Jardim.jpg')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="Vassoura-Jardim-Regulavel-Cabo-de-120cm.jpg" alt="Vassoura Regulável Tramontina">
+                <h3>Vassoura Regulável Tramontina 22 Dentes</h3>
+                <p>Preço: R$ 180,00</p>
+                <button onclick="adicionarAoCarrinho('Vassoura Regulável Tramontina 22 Dentes', '180.00', 'Vassoura-Jardim-Regulavel-Cabo-de-120cm.jpg')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="Esguicho.jpg" alt=" Tramontina Hidropistola 6 tipos de jato para Engate Rápido Multifunção">
+                <h3>Tramontina Hidropistola</h3>
+                <p>Preço: R$ 28,00</p>
+                <button onclick="adicionarAoCarrinho('Tramontina Hidropistola', '28.00', 'Esguicho.jpg')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="serrote.jpg" alt="Serrote De Poda Curvo 12'">
+                <h3>Serrote De Poda Curvo Starfer 12'</h3>
+                <p>Preço: R$ 26,00 und.</p>
+                <button onclick="adicionarAoCarrinho('Serrote De Poda Curvo Starfer 12', '26.00', 'serrote.jpg')">Adicionar ao Carrinho</button>
+            </div>
+            <div class="produto">
+                <img src="aparador.jpg" alt="Aparador De Grama Elétrico">
+                <h3>Aparador De Grama Elétrico Tramontina 1500W 110V</h3>
+                <p>Preço: R$ 219,00 und.</p>
+                <button onclick="adicionarAoCarrinho('Aparador De Grama Elétrico Tramontina 1500W 110V', '219.00', 'aparador.jpg')">Adicionar ao Carrinho</button>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p>Jardim Florido &copy; 2024</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Prata&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Prata", serif;
+    background-color: white;
+    background-image: url('fundo\ 2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+.tituloDoSite {
+    text-align: center;
+    color: #D97171;
+    font-size: 50px;
+    font-family: "Prata", serif;
+    margin-top: 20px;
+}
+
+#menuItem {
+    
+    justify-content: space-between;
+    background-color: #617946;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    
+}
+
+#menuItem ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: in;
+    gap: 20px;
+    
+}
+
+#menuItem ul li {
+    display: inline;
+    
+    
+}
+
+#menuItem_itens {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#menuItem_itens:hover {
+    background-color: #d9e4e3;
+    color: #8d9485;
+}
+
+#menuToggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+    #menuItem ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menuToggle {
+        display: block;
+    }
+
+    #menuItem ul li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    #menuItem ul li a {
+        padding: 10px;
+    }
+
+    #menuItem ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #617946;
+    }
+}
+
+#caixasInformativas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 120px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    
+}
+
+#caixasInformativas .box {
+    flex: 1;
+    padding: 30px;
+    background-color: #fce9d4;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#caixasInformativas .box h2 {
+    color: #555;
+    font-family: "Cinzel", serif;
+}
+
+#caixasInformativas .box p {
+    color: #666;
+    font-size: 16px;
+    font-family: "Prata", serif;
+}
+
+
+.rodape {
+    background-color: #617946;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    margin-top: auto;
+    
+}
+
+.corpoDaPagina{
+    margin: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+#itensCarrinho {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.item img {
+    width: 50px; 
+    height: auto;
+    margin-right: 15px;
+}
+
+.descricao {
+    flex-grow: 1;
+    
+}
+
+
+
+.finalizarCompra {
+    background-color: #617946; 
+    color: white; 
+    border: none; 
+    padding: 10px 15px; 
+    cursor: pointer;
+}
+
+#compra {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+#compra h1 {
+    text-align: center;
+    font-family: "Cinzel", serif;
+    color: #617946;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
